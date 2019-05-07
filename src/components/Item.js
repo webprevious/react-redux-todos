@@ -30,6 +30,8 @@ class Item extends React.Component {
   handleDoubleClick () {
     this.setState({
       onEdit: true
+    }, () => {
+      this.refs.txt.value = this.props.item.content
     })
   }
 

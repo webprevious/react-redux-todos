@@ -1,3 +1,6 @@
 .done {
   text-decoration: line-through;
 }
+.active-bar {
+  background: orange;
+}

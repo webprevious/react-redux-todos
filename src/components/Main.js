@@ -48,7 +48,7 @@ class Main extends React.Component {
           })}
           {/* {console.log(this.props.actions)} */}
         </ul>
-        <InfoBar todos={filterTodos} show={(this.show).bind(this)}></InfoBar>
+        <InfoBar todos={filterTodos} show={(this.show).bind(this)} curBar={this.state.status}></InfoBar>
         {/* <div>测试组件使用connect函数升级后内部数据变化是否会引起组件重新render</div>
         <button onClick={(this.updateTest).bind(this)}>测试值{this.state.test}</button> */}
       </div>
